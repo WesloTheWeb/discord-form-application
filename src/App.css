@@ -3,8 +3,18 @@
 }
 
 body {
+  font-size: 1.25rem;
   background-color: var(--backgroundColor);
-  margin: 2rem auto;
+  margin: 2rem 10rem;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -17,9 +27,28 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.contact-information-section {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.25rem 0;
+}
+
+.contact-information-section > div {
+  margin: .75rem;
+}
+
+.legal-question-section {
+  display: flex;
+  margin: .75rem 0;
 }
