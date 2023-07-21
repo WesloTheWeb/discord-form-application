@@ -4,3 +4,10 @@
     padding: 0 3rem 1rem 3rem;
     margin: 1rem 1.5rem;
 }
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    padding:  1rem .25rem;
+}
