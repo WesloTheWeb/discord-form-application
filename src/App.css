@@ -1,0 +1,25 @@
+:root {
+  --backgroundColor: rgb(88,101,242);
+}
+
+body {
+  background-color: var(--backgroundColor);
+  margin: 2rem auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 6em;
+  padding: 1.5em;
+  margin-top: 0;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
