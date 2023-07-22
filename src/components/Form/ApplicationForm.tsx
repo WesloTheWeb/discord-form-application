@@ -23,14 +23,13 @@ const { formContainer } = classes;
 
 const ApplicationForm = ({ }) => {
 
-    const { register, handleSubmit, watch, formState: { errors }, } = useForm<Inputs>();
+    const { register, handleSubmit, formState: { errors }, } = useForm<Inputs>();
 
     const onSubmit: SubmitHandler<Inputs> = (data) => {
         console.log(data);
         console.log(data.resume[0].name);
         const numFilledFields = countElements(data);
         console.log(`Number of filled fields: ${numFilledFields}`);
-
     };
 
     const countElements = (el: Record<string, any>) => {
@@ -44,8 +43,6 @@ const ApplicationForm = ({ }) => {
 
         return total;
     };
-
-    // console.log(watch("example")) // watch input value by passing the name of it
 
     return (
         <form
