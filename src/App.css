@@ -25,6 +25,21 @@ span {
   text-align: right;
 }
 
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  color: #d28fc6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+  font-weight: bold;
+}
+
 button {
   background-color: #000;
   color: #fff;
@@ -32,6 +47,10 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin: 1rem;
+}
+
+button:hover {
+  font-weight: bold;
 }
 
 .logo {
@@ -79,3 +98,4 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
 }
+
