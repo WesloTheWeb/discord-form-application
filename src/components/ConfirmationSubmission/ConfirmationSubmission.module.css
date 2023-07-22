@@ -1,0 +1,14 @@
+.container {
+    background-color: #fff;
+    height: 180px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.container h2 {
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(169, 220, 184);
+    color: rgb(14, 78, 36);
+    margin-bottom: 0;
+}
