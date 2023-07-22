@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
 import classes from './ApplicationForm.module.css';
 
@@ -34,7 +33,7 @@ const ApplicationForm = ({ onFormSubmit }: ApplicationFormProps) => {
         console.log(data.resume[0].name);
         const numFilledFields = countElements(data);
         console.log(`Number of filled fields: ${numFilledFields}`);
-        onFormSubmit(); // Call the function passed in through props to notify the parent component that the form has been submitted
+        onFormSubmit();
     };
 
     const countElements = (el: Record<string, any>) => {
