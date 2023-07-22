@@ -59,16 +59,16 @@ const ApplicationForm = ({ onFormSubmit }: ApplicationFormProps) => {
             <section className='contact-information-section'>
                 <div>
                     <label><span>*</span>First Name</label>
-                    <input {...register("firstName", { required: "Field cannot be blank" })} />
+                    <input {...register("firstName", { required: "Field cannot be blank" })} placeholder="Solid" />
                     {errors.firstName && <span> {errors.firstName.message} </span>}
                 </div>
                 <div>
                     <label><span>*</span>Last Name</label>
-                    <input {...register("lastName", { required: "Field cannot be blank" })} />
+                    <input {...register("lastName", { required: "Field cannot be blank" })} placeholder="Snake" />
                     {errors.lastName && <span> {errors.lastName.message} </span>}
                 </div>
                 <div>
-                    <label><span>*</span>Resume</label>
+                    <label><span>*</span>Resume/CV</label>
                     <input id="upload" {...register('resume', { required: "A Resume must be uploaded" })} type="file" />
                     {errors.resume && <span> {errors.resume.message} </span>}
                 </div>
@@ -76,12 +76,12 @@ const ApplicationForm = ({ onFormSubmit }: ApplicationFormProps) => {
             <section className="contact-information-section">
                 <div>
                     <label><span>*</span>Location</label>
-                    <input {...register("location", { required: "Location required" })} />
+                    <input {...register("location", { required: "Location required" })} placeholder="Shadow Moses" />
                     {errors.location && <span> {errors.location.message} </span>}
                 </div>
                 <div>
                     <label><span>*</span>Phone Number</label>
-                    <input {...register("phoneNumber", { required: "A valid phone number must be entered." })} />
+                    <input {...register("phoneNumber", { required: "A valid phone number must be entered." })} placeholder="(123)456-7890" />
                     {errors.phoneNumber && <span> {errors.phoneNumber.message} </span>}
                 </div>
                 <div>
@@ -95,9 +95,10 @@ const ApplicationForm = ({ onFormSubmit }: ApplicationFormProps) => {
                             required: "Field cannot be blank",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                message: "A valid email address is required"
+                                message: "Hey, your email is invalid, fix it plz"
                             }
                         })}
+                        placeholder="solid.snake@discord.com"
                     />
                     {errors.email && <span> {errors.email.message} </span>}
                 </div>
