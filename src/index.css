@@ -9,3 +9,9 @@ h1 {
   font-family: Lunasima, sans-serif;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}

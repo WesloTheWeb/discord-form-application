@@ -5,15 +5,17 @@
     margin: 1rem 1.5rem;
 }
 
-/* .formContainer > section {
-    padding: 0 3rem 1rem 3rem;
-} */
+@media (max-width: 767px) {
+    .formContainer  {
+        width: 100%;
+    }
+}
 
 h2 {
     text-align: center;
     text-transform: capitalize;
     font-family: 'Courier New', Courier, monospace;
-    padding:  1rem .25rem;
+    padding: 1rem .25rem;
 }
 
 .formContainer textarea {
@@ -21,4 +23,16 @@ h2 {
     height: 200px;
     resize: none;
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .formContainer textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width: 568px) {
+    .formContainer textarea {
+        width: 300px;
+    }
 }
