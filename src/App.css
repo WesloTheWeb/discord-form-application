@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./fonts/NotoSans-Regular.ttf') format('truetype');
+  /* You can add additional font formats (e.g., woff, woff2) to support more browsers */
+}
+
 :root {
   --backgroundColor: rgb(88, 101, 242);
 }
 
 body {
   font-size: 1.25rem;
+  font-family: NotoSans, sans-serif;
   background-color: var(--backgroundColor);
   margin: 2rem 7rem;
 }
@@ -41,6 +48,7 @@ a:hover {
 }
 
 button {
+  font-size: 1.1rem;
   background-color: #5865F2;
   color: rgb(245,255,255);
   padding: .75rem 1rem;
@@ -48,6 +56,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin: 1rem;
+  box-sizing: border-box;
+  width: 100px; /* Set an explicit width */
+  height: 50px; /* Set an explicit height */
 }
 
 button:hover {
